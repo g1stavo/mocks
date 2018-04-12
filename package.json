@@ -1,0 +1,14 @@
+{
+  "name": "moks",
+  "version": "1.0.0",
+  "description": "Tool to mock up Chaordic widgets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+  	"express": "4.15.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
