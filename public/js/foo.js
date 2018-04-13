@@ -29,6 +29,8 @@ var setApikey = () => {
     const loader = document.getElementById('loader');
     if (document.getElementById('checkbox').checked) {
         chaordic.writeCookie("freedom", "true");
+    } else {
+        chaordic.writeCookie("freedom", "false");
     }
     home();
     chaordic.setActiveFoo(apikey);

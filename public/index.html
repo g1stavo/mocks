@@ -22,17 +22,17 @@
             <a class="navbar-brand" href="#">Widget Mocker</a>            
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" id="apikey" placeholder="Apikey" aria-label="Apikey">
+                    <div class="checkbox navbar-btn" id="freedom">
+                        <label class="navbar-link" for="filterUnfulfilled">
+                            <input type="checkbox" class="autosubmit" id="checkbox" value="true"> Freedom
+                        </label>
+                    </div>
                     <button class="btn btn-outline-success my-2 my-sm-0" id="apikeyButton" type="submit" onclick="setApikey()">Go</button>
                 </form>
                 <form class="form-inline">
                 	<input class="form-control mr-sm-2" type="search" id="pid" placeholder="Product ID" aria-label="Product ID">
                 	<button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="product()">Go</button>
-                </form>
-                <div class="checkbox navbar-btn" id="freedom">
-                    <label class="navbar-link" for="filterUnfulfilled">
-                        <input type="checkbox" class="autosubmit" id="checkbox" value="true"> Freedom
-                    </label>
-                </div>
+                </form>                
             </ul>
         </nav>        
         <div class="container" style="max-width: 1306px">
