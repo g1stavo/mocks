@@ -14,7 +14,7 @@ var chaordic_meta = homeMeta;
 
 var isFreedom = () => {
     const loader = document.getElementById('loader');
-    if (chaordic.readCookie("freedom") == "true") {
+    if (readCookie("freedom") == "true") {
         loader.setAttribute('data-group', 'netshoes-freedom');
     } else {
         let attr = $(loader).attr('data-group');
@@ -22,7 +22,7 @@ var isFreedom = () => {
             loader.removeAttribute('data-group');
         }
     }
-}
+};
 
 var setApikey = () => {   
     const apikey = document.getElementById('apikey').value;
@@ -51,4 +51,20 @@ var product = () => {
 var home = () => {
     chaordic_meta = homeMeta;
     chaordic.initialize();
+};
+
+var readCookie = (cookieName) => {
+    var name = cookieName + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 };
