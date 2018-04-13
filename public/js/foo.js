@@ -13,7 +13,8 @@ const homeMeta = {
 
 var chaordic_meta = homeMeta;
 
-var setApikey = (apikey) => {
+var setApikey = () => {
+    apikey = document.getElementById('apikey').value;
     home();
     chaordic.setActiveFoo(apikey);
     location.reload(true);

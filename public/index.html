@@ -14,35 +14,10 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <ul class="nav nav-pills">
             <a class="navbar-brand" href="#">Freedom Mocks</a>            
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Apikey</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" id ="netshoes-ar" onclick="setApikey(id)" href="#">netshoes-ar</span></a>
-                            <a class="dropdown-item" id ="netshoes-mx" onclick="setApikey(id)" href="#">netshoes-mx</span></a>
-                            <a class="dropdown-item" id="ns-asics-mx" onclick="setApikey(id)" href="#">ns-asics-mx</a>
-                            <a class="dropdown-item" id="ns-asics" onclick="setApikey(id)" href="#">ns-asics</a>
-                            <a class="dropdown-item" id="ns-asics-mx" onclick="setApikey(id)" href="#">ns-asics-mx</a>
-                            <a class="dropdown-item" id="ns-cazadosport" onclick="setApikey(id)" href="#">ns-cazadosport</a>
-                            <a class="dropdown-item" id="ns-cruzeiro" onclick="setApikey(id)" href="#">ns-cruzeiro</a>
-                            <a class="dropdown-item" id="ns-gigantedacolina" onclick="setApikey(id)" href="#">ns-gigantedacolina</a>
-                            <a class="dropdown-item" id="ns-internacional" onclick="setApikey(id)" href="#">ns-internacional</a>
-                            <a class="dropdown-item" id="ns-lojanba" onclick="setApikey(id)" href="#">ns-lojanba</a>
-                            <a class="dropdown-item" id="ns-midway" onclick="setApikey(id)" href="#">ns-midway</a>
-                            <a class="dropdown-item" id="ns-mundopalmeiras" onclick="setApikey(id)" href="#">ns-mundopalmeiras</a>
-                            <a class="dropdown-item" id="ns-onitsukatiger" onclick="setApikey(id)" href="#">ns-onitsukatiger</a>
-                            <a class="dropdown-item" id="ns-santosshop" onclick="setApikey(id)" href="#">ns-santosshop</a>
-                            <a class="dropdown-item" id="ns-santosstore" onclick="setApikey(id)" href="#">ns-santosstore</a>
-                            <a class="dropdown-item" id="ns-saopaulomania" onclick="setApikey(id)" href="#">ns-saopaulomania</a>
-                            <a class="dropdown-item" id="ns-shoestock" onclick="setApikey(id)" href="#">ns-shoestock</a>
-                            <a class="dropdown-item" id="ns-shoptimao" onclick="setApikey(id)" href="#">ns-shoptimao</a>
-                            <a class="dropdown-item" id="ns-soycuervo" onclick="setApikey(id)" href="#">ns-soycuervo</a>
-                            <a class="dropdown-item" id="ns-tiendachivas" onclick="setApikey(id)" href="#">ns-tiendachivas</a>
-                            <a class="dropdown-item" id="ns-tiendacruzazulonline" onclick="setApikey(id)" href="#">ns-tiendacruzazulonline</a>
-                            <a class="dropdown-item" id="ns-tiendaoficialamerica" onclick="setApikey(id)" href="#">ns-tiendaoficialamerica</a>
-                            <a class="dropdown-item" id="ns-tiendapumas" onclick="setApikey(id)" href="#">ns-tiendapumas</a>
-                            <a class="dropdown-item" id="ns-zattini" onclick="setApikey(id)" href="#">ns-zattini</a>
-                        </div>
-                </li>
+                <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" id="apikey" placeholder="Apikey" aria-label="Apikey">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="setApikey()">Go</button>
+                    </form>
                 <form class="form-inline">
                 	<input class="form-control mr-sm-2" type="search" id="pid" placeholder="Product ID" aria-label="Product ID">
                 	<button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="product()">Go</button>
