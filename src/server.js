@@ -1,16 +1,16 @@
 var fs = require("fs");
 var port = 3000;
 var express = require("express");
-var server = express();
+var app = express();
 
-server.use(express.static(__dirname + 'public'));
+app.use(express.static('public'));
 
 function init(){
-    server = server.listen(port);
+    app = app.listen(port);
 };
 
 function stop(){
-    server.close();
+    app.close();
 }
 
 if(process.argv.indexOf('start') != -1){
