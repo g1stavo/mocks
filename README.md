@@ -9,6 +9,6 @@ To see the Product page, type a product ID after typing an apikey (the product I
 ```shell
 $ cd mocks
 $ npm i 
-$ node server.js start
+$ npm start
 ```
 Then open http://localhost:3000/. As it works like a normal page, remember to use ?homologation=true to display all widgets.
