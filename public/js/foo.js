@@ -28,9 +28,9 @@ var setApikey = () => {
     const apikey = document.getElementById('apikey').value;
     const loader = document.getElementById('loader');
     if (document.getElementById('checkbox').checked) {
-        chaordic.writeCookie("freedom", "true");
+        setCookie('freedom', 'true', 1);
     } else {
-        chaordic.writeCookie("freedom", "false");
+        setCookie('freedom', 'false', 1);
     }
     home();
     chaordic.setActiveFoo(apikey);
@@ -70,3 +70,10 @@ var readCookie = (cookieName) => {
     }
     return "";
 };
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
