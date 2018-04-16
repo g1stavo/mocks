@@ -53,6 +53,7 @@ var product = () => {
 var home = () => {
     chaordic_meta = homeMeta;
     chaordic.initialize();
+};
   
 var readCookie = (cookieName) => {
     var name = cookieName + "=";
