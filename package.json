@@ -1,5 +1,5 @@
 {
-  "name": "moks",
+  "name": "mocks",
   "version": "1.0.0",
   "description": "Tool to mock up Chaordic widgets",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "node server.js start"
   },
   "devDependencies": {
-  	"express": "4.15.3"
+    "express": "4.15.3"
   },
   "author": "",
   "license": "ISC"
