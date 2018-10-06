@@ -1,23 +1,16 @@
-var fs = require("fs");
-var port = 3000;
-var express = require("express");
-var app = express();
+const port = 3000;
+let express = require('express');
+let app = express();
 
 app.use(express.static('public'));
 
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/public/index.html');
-});
+app.get('/', (req, res) => res.sendFile(__dirname + '/public/index.html'));
 
-function init(){
-    app = app.listen(port);
-};
+init = () => app = app.listen(port);
 
-function stop(){
-    app.close();
-}
+stop = () => app.close();
 
-if(process.argv.indexOf('start') != -1){
+if (process.argv.indexOf('start') != -1) {
     init();
     console.log("Server listening on port: ", port);
 }
