@@ -8,8 +8,15 @@ To see the Home page, type the apikey on the navbar and OK it (select Freedom ch
 
 To see the Product page, type a product ID after typing an apikey (the product ID must be one valid for the apikey, of course).
 
+## Install
+```shell
+git clone git@github.com:g1stavo/mocks
+cd mocks
+npm i
+``` 
+
 ## Run
 ```shell
-$ npm start
+npm start
 ```
 Then open http://localhost:3000/. As it works like a normal page, remember to use ?homologation=true to display all widgets.
